@@ -4,7 +4,8 @@
   "description": "Playing with cypress.io for SE433",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "e2e:local": "cypress open",
+    "e2e:ci": "cypress run --record --key $CYPRESS_KEY"
   },
   "author": "Diego Hernandez",
   "license": "ISC",
