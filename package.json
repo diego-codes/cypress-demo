@@ -1,0 +1,14 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "Playing with cypress.io for SE433",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "Diego Hernandez",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.3.1"
+  }
+}
