@@ -1,9 +1,5 @@
 /// <reference types="Cypress" />
 
-const scrollToEndOfDoc = doc => {
-  cy.scrollTo(0, doc.body.clientHeight)
-}
-
 describe('Homepage', () => {
   beforeEach(() => {
     cy.server()
@@ -13,9 +9,9 @@ describe('Homepage', () => {
   })
 
   it('loads more images when user scrolls to the bottom of the page', () => {
-    cy.document().then(scrollToEndOfDoc)
+    cy.scrollTo('bottom')
     cy.wait('@flickr')
-    cy.document().then(scrollToEndOfDoc)
+    cy.scrollTo('bottom')
     cy.wait('@flickr')
   })
 
